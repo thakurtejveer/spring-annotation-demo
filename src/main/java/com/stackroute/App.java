@@ -15,8 +15,11 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context= new AnnotationConfigApplicationContext(AppConfigue.class);
-        Movie movie=context.getBean(Movie.class);
-        movie.printActor();
+        Movie movie1=context.getBean(Movie.class);
+        movie1.printActor();
+        Movie movie2=context.getBean(Movie.class);
+        movie2.printActor();
+        System.out.println(movie1==movie2);
 //        XmlBeanDefinitionReader factory=new XmlBeanFactory(new ClassPathResource(AppConfigue.class));
     }
 }

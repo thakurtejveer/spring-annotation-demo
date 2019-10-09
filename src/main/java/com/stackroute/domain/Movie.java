@@ -10,8 +10,6 @@ public class Movie {
         this.actor = act;
     }
     public void printActor() {
-        System.out.println(actor.getName());
-        System.out.println(actor.getGender());
-        System.out.println(actor.getAge());
+        actor.studentInfo();
     }
 }

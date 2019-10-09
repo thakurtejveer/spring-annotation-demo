@@ -11,16 +11,20 @@ public class Actor {
         this.name = Name;
         this.gender = Gender;
     }
-
-    public String getName() {
-        return name;
+    public void studentInfo() {
+        System.out.println("Name is "+name);;
+        System.out.println("Gender is "+gender);
+        System.out.println("Age is "+age);
     }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public int getAge() {
+//        return age;
+//    }
+//
+//    public String getGender() {
+//        return gender;
+//    }
 }
